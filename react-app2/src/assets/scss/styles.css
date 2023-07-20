@@ -1,6 +1,6 @@
 /* Container for the menu */
 nav {
-  background-color: #333;
+  background-color: #000;
 }
 
 .main {
@@ -67,4 +67,10 @@ a.active {
   .hero {
     min-height: 500px;
   }
+}
+
+.carousel-item img {
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */

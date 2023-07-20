@@ -1,6 +1,6 @@
 /* Container for the menu */
 nav {
-	background-color: #333;
+	background-color: #000;
 }
 .main {
 	text-align: center;
@@ -64,4 +64,9 @@ a.active {
 	@media (min-width: 768px) {
 		min-height: 500px;
 	}
+}
+
+.carousel-item img {
+	max-height: 400px;
+	object-fit: cover;
 }

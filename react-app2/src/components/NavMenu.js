@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { Button } from "react-bootstrap";
 const NavMenu = () => {
 	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -10,18 +10,13 @@ const NavMenu = () => {
 
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-			<button
-				className="navbar-toggler"
-				type="button"
-				onClick={handleMobileMenuToggle}
-			>
+			<button className="navbar-toggler" type="button" onClick={handleMobileMenuToggle}>
 				<span className="navbar-toggler-icon"></span>
 			</button>
-			<div
-				className={`collapse navbar-collapse${
-					isMobileMenuOpen ? " show" : ""
-				}`}
-			>
+			<div className={`collapse navbar-collapse${isMobileMenuOpen ? " show" : ""}`}>
+				<div>
+					<img width={120} className="primary" src="" alt="" />
+				</div>
 				<ul className="navbar-nav">
 					<li className="nav-item">
 						<Link to="/" className="nav-link">
@@ -44,6 +39,9 @@ const NavMenu = () => {
 						</Link>
 					</li>
 				</ul>
+				<div>
+					<Button variant="primary">CTA </Button>
+				</div>
 			</div>
 		</nav>
 	);
